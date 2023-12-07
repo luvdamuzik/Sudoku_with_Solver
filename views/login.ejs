@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<script>
+</script>
+</head>
+<body>
+
+<div class="container" style="background: black; border-radius: 10px; padding: 10px;color: white;margin-top: 20px">
+  <form action="/login" method="post">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="text-align: center">Prijavite se!</h3>
+          </div>
+          <div class="panel-body">
+            <% if(messages.error) { %>
+              <h2><%= messages.error %></h2>
+            <% }%>
+            <div class="row">
+              <div class="form-group" style="width: 100%">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control input-sm" style="width: 100%" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group" style="width: 100%">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control input-sm" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <button type="submit" class="btn btn-info btn-block">Login</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>
+<h2 style="text-align: center;">Ako nemate account. Kliknite ovdje.</h2>
+</body>
+</html>

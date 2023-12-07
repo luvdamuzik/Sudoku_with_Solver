@@ -1,0 +1,44 @@
+.homeDiv{
+    background-color: #282c34;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.containerHome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:300px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+span{
+    font-size: 50px;
+    color: bisque;
+}
+
+.playButton{
+    background-color: tomato;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.leaderboardButton{
+    background-color: orange;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
